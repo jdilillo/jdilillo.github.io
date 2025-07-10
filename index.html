@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Taylor Lapeyre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Gowun Batang", sans-serif;
+        color: #333;
+        font-size: 16px;
+        margin: 0;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+      }
+
+      .profile-photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sprite {
+        width: 500px;
+        /* height: 500px; */
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+          rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        border-radius: 3px;
+      }
+
+      .intro {
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .intro-title {
+        font-weight: 400;
+      }
+
+      .paragraph {
+        max-width: 36rem;
+        line-height: 1.8;
+      }
+
+      .link {
+        color: rgb(206, 75, 36);
+        text-decoration: none;
+      }
+
+      .attribution {
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+      }
+
+      .attribution,
+      .attribution a {
+        font-size: 10px;
+        color: #9e9e9e;
+        text-decoration: none;
+      }
+
+      .badge {
+        width: 300px;
+        height: 128px;
+        border: 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        list-style-type: none;
+        margin-bottom: 8px;
+      }
+
+      @media screen and (max-width: 992px) {
+        body {
+          font-size: 40px;
+        }
+
+        .container {
+          grid-template-columns: 1fr;
+        }
+
+        .paragraph {
+          max-width: 90%;
+        }
+
+        .intro {
+          margin: 0;
+          margin-left: 52px;
+          margin-top: 30px;
+        }
+
+        .attribution {
+          display: none;
+        }
+
+        .badge {
+          position: static;
+        }
+
+        .sprite {
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="profile-photo">
+        <img src="photo.jpeg" class="sprite" />
+      </div>
+      <div class="intro">
+        <p class="paragraph">
+          Hi, I’m <b>Taylor</b>. I work at a company called
+          <a href="https://notion.com" class="link">Notion</a>.
+        </p>
+        <p class="paragraph">
+          I’m lucky enough to live in <b>San Francisco</b>, one of the most
+          beautiful cities I’ve ever been to. I spend a lot of my free time
+          exploring this place: walking up hills,
+          <a href="https://me.taylorlapeyre.com/photos" class="link"
+            >taking photos</a
+          >, watching birds.
+        </p>
+        <p class="paragraph">
+          I love to think about <b>liberal education</b> — especially literature, poetry, and philosophy.
+          Currently, I’m reading through the western canon. You can see my
+          progress
+          <a
+            href="https://tlapeyre.notion.site/9661e5ed5eb54d72ad5565f247eea584?v=eb7a8b5c6817436ab9c39c3ccf9ce179&pvs=4"
+            class="link"
+          >
+            here</a
+          >, and some thoughts I’ve had in the process <a href="https://tlapeyre.notion.site/Pens-es-176026bba28f807ba015c8aa48d91aac" class="link">here</a>.
+        </p>
+        <p class="paragraph">
+          Feel free to
+          <a class="link" id="email" href="mailto:hello@taylorlapeyre.com"
+            >get in touch</a
+          >. I’d love to meet you.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
